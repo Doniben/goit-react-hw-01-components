@@ -2,7 +2,7 @@ import { useState } from 'react';
 import s from './Searchbar.module.css';
 import { toast } from 'react-toastify';
 
-function Searchbar(props) {
+export function Searchbar(props) {
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleSearchQueryChange = event => {
@@ -42,5 +42,3 @@ function Searchbar(props) {
         </form>
     </header>
 }
-
-export default Searchbar;

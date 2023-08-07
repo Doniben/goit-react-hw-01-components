@@ -1,9 +1,5 @@
 import { useState } from 'react';
-import Wrapper from "components/Wrapper";
-import Section from "components/Section";
-import Searchbar from 'components/Searchbar';
-import ImageGallery from 'components/ImageGallery';
-import Modal from 'components/Modal';
+import { Wrapper, Section, Searchbar, ImageGallery, Modal } from 'components/';
 import ScrollToTop from 'react-scroll-up';
 import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './ImageGalleryItem.module.css';
 
-export default function ImageGalleryItem(props) {
+export function ImageGalleryItem(props) {
   const { data, openModal } = props;
 
   return (

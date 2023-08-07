@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react';
-import Container from 'components/Container';
-import ImageGalleryItem from 'components/ImageGalleryItem';
-import Loader from 'components/Loader';
-import Button from 'components/Button';
+import { Container, ImageGalleryItem, Loader, Button } from 'components/';
 import { fetchImages } from 'services/images-api';
 import s from './ImageGallery.module.css';
 import { toast } from 'react-toastify';
 
-function ImageGallery({searchQuery, onModalOpen}) {
+export function ImageGallery({searchQuery, onModalOpen}) {
     const [query, setQuery] = useState('');
     const [images, setImages] = useState([]);
     const [page, setPage] = useState(1);
@@ -94,5 +91,3 @@ function ImageGallery({searchQuery, onModalOpen}) {
         </Container>
     }
 }
-
-export default ImageGallery;

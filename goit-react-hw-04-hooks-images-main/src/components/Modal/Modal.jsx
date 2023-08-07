@@ -4,7 +4,7 @@ import s from './Modal.module.css';
 
 const modalRoot = document.querySelector('#modal-root');
 
-function Modal(props) {
+export function Modal(props) {
     // Closing modal window on Esc button click
     const handleKeyDown = useCallback(event => {
         if (event.code === 'Escape') {
@@ -42,5 +42,3 @@ function Modal(props) {
         modalRoot
     );
 }
-
-export default Modal;

@@ -1,6 +1,6 @@
 import s from './Loader.module.css';
 
-const Loader = () => {
+export const Loader = () => {
     return <p className={s.loader}>
         <span
             className="spinner-border spinner-border-sm spinner is-hidden"
@@ -9,5 +9,3 @@ const Loader = () => {
         ></span>
     </p>
 }
-
-export default Loader;
