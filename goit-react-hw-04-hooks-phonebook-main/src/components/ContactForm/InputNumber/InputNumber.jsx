@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './InputNumber.module.css';
 
-const InputNumber = ({ number, onNumberChange}) => {
+export const InputNumber = ({ number, onNumberChange}) => {
     return <input
       type="tel"
       name="number"
@@ -23,5 +23,3 @@ const InputNumber = ({ number, onNumberChange}) => {
 InputNumber.propTypes = {
   number: PropTypes.string.isRequired
 }
-
-export default InputNumber;

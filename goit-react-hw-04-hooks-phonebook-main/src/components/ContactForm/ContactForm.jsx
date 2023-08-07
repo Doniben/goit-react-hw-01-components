@@ -1,12 +1,9 @@
 import {useState} from 'react';
-import Label from './Label';
-import InputName from './InputName';
-import InputNumber from './InputNumber';
-import Button from 'components/Button';
+import { Button, InputNumber, InputName, Label } from 'components/';
 import s from './ContactForm.module.css';
 import { nanoid } from 'nanoid'
 
-function ContactForm(props) {
+export function ContactForm(props) {
     const [id, setId] = useState(nanoid(6));
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
@@ -62,5 +59,3 @@ function ContactForm(props) {
         <Button type={'submit'} title={"Add contact"} />
 </form>
 };
-
-export default ContactForm;
