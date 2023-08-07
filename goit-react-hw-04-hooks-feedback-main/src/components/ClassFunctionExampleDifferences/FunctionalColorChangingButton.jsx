@@ -22,9 +22,7 @@ export const FunctionalColorChangingButton = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      Hover Me
+      Functional Component
     </button>
   );
 };
-
-export default ColorChangingButton;

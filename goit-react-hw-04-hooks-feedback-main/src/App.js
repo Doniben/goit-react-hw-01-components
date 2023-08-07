@@ -1,9 +1,5 @@
 import { useState } from 'react';
-import Wrapper from "components/Wrapper";
-import Section from "components/Section";
-import FeedbackOptions from 'components/FeedbackOptions';
-import Statistics from 'components/Statistics';
-import Notification from 'components/Notification';
+import { Wrapper, Section, FeedbackOptions, Statistics, Notification } from 'components/';
 
 function App() {
     const [stats, setStats] = useState({

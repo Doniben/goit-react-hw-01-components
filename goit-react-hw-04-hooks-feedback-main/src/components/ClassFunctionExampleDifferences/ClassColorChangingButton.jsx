@@ -28,7 +28,7 @@ export class ClassColorChangingButton extends Component {
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
       >
-        Hover Me
+        Class Component
       </button>
     );
   }
