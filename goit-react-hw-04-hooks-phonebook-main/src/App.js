@@ -1,11 +1,7 @@
 import { useState } from 'react';
-import Wrapper from "components/Wrapper";
-import Section from "components/Section";
-import ContactForm from 'components/ContactForm';
-import Filter from 'components/Filter';
-import ContactList from 'components/ContactList';
-import Notification from 'components/Notification';
+import { Wrapper, Section, ContactForm, Filter, ContactList, Notification } from "components/";
 import useLocalStorage from 'hooks/useLocalStorage';
+import Swal from 'sweetalert2';
 
 function App() {
     const [contacts, setContacts] = useLocalStorage('contacts', []);
@@ -15,7 +11,7 @@ function App() {
         if (contacts.find(contact => contact.name.toLowerCase() === data.name.toLowerCase())) {
             setFilter('');
             
-            return alert(`${data.name} is already in contacts`);
+            return Swal.fire(`${data.name} is already in contacts`)
         }
 
         setContacts(prevState => [...prevState, data]);
