@@ -1,6 +1,6 @@
 import s from './ContactList.module.css';
 
-const ContactList = ({ data, filterName, onDeleteContact }) => {
+export const ContactList = ({ data, filterName, onDeleteContact }) => {
     return <ul className={s.contacts}>
       {data.filter(({name}) => name.toLowerCase().includes(filterName.trim())).map(({id, name, number}) => (
         <li key={id} className={s.item}>
@@ -17,5 +17,3 @@ const ContactList = ({ data, filterName, onDeleteContact }) => {
     ))}
   </ul>
 }
-
-export default ContactList;

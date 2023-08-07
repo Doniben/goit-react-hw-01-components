@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
-import Wrapper from "components/Wrapper";
-import Section from "components/Section";
-import ContactForm from 'components/ContactForm';
-import Filter from 'components/Filter';
-import ContactList from 'components/ContactList';
-import Notification from 'components/Notification';
+import { Wrapper, Section, ContactForm, Filter, ContactList, Notification } from "components/";
+import Swal from 'sweetalert2';
 
 class App extends Component{
     state = {
@@ -45,7 +41,7 @@ class App extends Component{
                 filter: ''
             });
             
-            return alert(`${data.name} is already in contacts`);
+            return Swal.fire(`${data.name} is already in contacts`)
         }
 
         this.setState(prevState => ({

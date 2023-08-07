@@ -1,7 +1,6 @@
-import Label from '../ContactForm/Label';
-import s from './Filter.module.css';
+import { Label } from 'components/';
 
-const Filter = ({name, onFilterChange}) => {
+export const Filter = ({name, onFilterChange}) => {
     return <Label labelTitle={'Find contacts by name'}>
         <input
             type="text"
@@ -12,5 +11,3 @@ const Filter = ({name, onFilterChange}) => {
     />
     </Label>
 }
-
-export default Filter;

@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
-import Label from './Label';
-import InputName from './InputName';
-import InputNumber from './InputNumber';
-import Button from 'components/Button';
+import { Label, InputName, InputNumber, Button } from 'components/';
 import s from './ContactForm.module.css';
 import { nanoid } from 'nanoid'
 
-class ContactForm extends Component{
+export class ContactForm extends Component{
     state = {
         id: '',
         name: '',
@@ -66,5 +63,3 @@ class ContactForm extends Component{
     </form>
     };
 };
-
-export default ContactForm;
