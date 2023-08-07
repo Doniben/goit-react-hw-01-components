@@ -1,10 +1,5 @@
 import React, {Component} from 'react';
-import Wrapper from "components/Wrapper";
-import Section from "components/Section";
-import ContactForm from 'components/ContactForm';
-import Filter from 'components/Filter';
-import ContactList from 'components/ContactList';
-import Notification from 'components/Notification';
+import { Wrapper, Section, ContactForm, Filter, ContactList, Notification } from "components/";
 import Swal from 'sweetalert2';
 
 class App extends Component{

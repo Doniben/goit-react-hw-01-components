@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './InputName.module.css';
 
-const InputName = ({ name, onNameChange}) => {
+export const InputName = ({ name, onNameChange}) => {
     return <input
       type="text"
       name="name"
@@ -23,5 +23,3 @@ const InputName = ({ name, onNameChange}) => {
 InputName.propTypes = {
   name: PropTypes.string.isRequired,
 }
-
-export default InputName;
